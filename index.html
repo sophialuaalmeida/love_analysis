@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Análises de Amor - Otavio e Sophia</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Single+Day&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <script src="script.js" defer></script>
+</head>
+
+<body>
+   <div class="container">
+      <header>
+         <nav>
+            <div class="logo">
+               <span class="heart-icon" aria-label="heart icon">&#10084;</span>
+               <span>Análises de Amor - Otavio e Sophia</span>
+            </div>
+         </nav>
+      </header>
+
+      <main>
+         <section class="hero">
+            <h1>Nosso Amor em Números</h1>
+            <p>Olá Otávio! Criei esta página para te apresentar alguns dados que obtive da nossa API. Essa aplicação analisa nossas conversas no Discord. Compilei algumas mensagens que considero especiais e outros dados interessantes. Espero que você goste.</p>
+         </section>
+
+         <div class="leaderboard">
+            <h2><i class="fas fa-chart-bar"></i> Estatísticas</h2>
+            <ol>
+               <li class="category love-declarations">
+                  <h3><i class="fas fa-heart"></i> Quantas vezes nos dissemos que nos amamos?</h3>
+                  <div class="leaderboard-item">
+                     <div class="item-content">
+                        <p>Por volta de <span class="result">0</span> vezes nós nos dissemos 'Eu te amo'.</p>
+                     </div>
+                  </div>
+               </li>
+               <li class="category beautiful-words">
+                  <h3><i class="fas fa-comments"></i> Também nos dissemos muitas outras palavras bonitas como:</h3>
+                  <div class="leaderboard-item">
+                     <div class="item-content">
+                        <ul class="word-list"></ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="category">
+                  <h3 class="no-left-margin"><i class="fas fa-smile"></i> Este é o Top 10 dos emojis que mais usamos e quantas vezes os usamos:</h3>
+                  <div class="leaderboard-item">
+                     <div class="item-content">
+                        <table class="emoji-leaderboard">
+                           <thead>
+                              <tr>
+                                 <th>Posição</th>
+                                 <th>Emoji</th>
+                                 <th>Vezes</th>
+                                 <th>Você</th>
+                                 <th>Eu</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </li>
+               <li class="category talked-more">
+                  <h3><i class="fas fa-calendar-alt"></i> Quando falamos mais?</h3>
+                  <div class="leaderboard-item">
+                     <div class="item-content">
+                        <p>Sabia que o dia em que mais falamos é na <span class="weekday"><span class="result">---</span></span>? 😯</p>
+                        <p>E o mês em que mais falamos foi em <span class="month"><span class="result">---</span></span> 😳</p>
+                        <p>Assim como a hora em que falamos mais durante <span class="period">---</span> é às <span class="hour"><span class="result">---</span></span> 😚</p>
+                     </div>
+                  </div>
+               </li>
+               <li class="category who-talked-more">
+                  <h3><i class="fas fa-comment-dots"></i> E... quem fala mais?</h3>
+                  <div class="leaderboard-item">
+                     <div class="item-content">
+                        <p>Você enviou um total de <span class="otavio-messages"><span class="result">0</span></span> mensagens.</p>
+                        <p>Eu enviei um total de <span class="sophia-messages"><span class="result">0</span></span> mensagens.</p>
+                        <p>E o vencedor(a) é... <span class="winner"><span class="result">---</span></span></p>
+                     </div>
+                  </div>
+               </li>
+               <li class="category average-messages">
+                  <h3><i class="fas fa-chart-line"></i> E por dia nos enviamos...</h3>
+                  <div class="leaderboard-item">
+                     <div class="item-content">
+                        <p>Sabia que... em média enviamos <span class="total"><span class="result">0</span></span> mensagens por dia.</p>
+                        <p>Onde você envia <span class="otavio"><span class="result">0</span></span> mensagens e eu envio <span class="sophia"><span class="result">0</span></span> mensagens em média por dia.</p>
+                     </div>
+                  </div>
+               </li>
+            </ol>
+         </div>
+      </main>
+
+      <footer>
+         <p>&copy; 2024 Análises de Amor - Otavio e Sophia. Todos os direitos reservados.</p>
+      </footer>
+   </div>
+</body>
+
+</html>
