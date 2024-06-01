@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-   fetch('https://cors-anywhere.herokuapp.com/http://54.94.254.15:3000/', {
+   fetch('https://love-analysis-api.vercel.app/', {
       method: 'GET'
    }).then(response => response.json()).then(data => {
       if (data && Object.keys(data).length > 0) {
