@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
          document.querySelector('.otavio-messages .result').textContent = data.who_talked_more ? data.who_talked_more.otavio.messages : 0;
          document.querySelector('.sophia-messages .result').textContent = data.who_talked_more ? data.who_talked_more.sophia.messages : 0;
-         document.querySelector('.winner').textContent = data.who_talked_more ? data.who_talked_more.winner === 'Você' ? 'Vocêêê! Me venceu desta vez. 😭' : 'Euuuu! Haha, foi fácil. 😎👌' : '---';
+         document.querySelector('.winner .result').textContent = data.who_talked_more ? data.who_talked_more.winner === 'Você' ? 'Vocêêê! Me venceu desta vez. 😭' : 'Euuuu! Haha, foi fácil. 😎👌' : '---';
 
          document.querySelector('.total .result').textContent = data.average_messages_per_day ? data.average_messages_per_day.total : 0;
          document.querySelector('.otavio .result').textContent = data.average_messages_per_day ? data.average_messages_per_day.otavio : 0;
