@@ -205,3 +205,8 @@ footer {
       transform: scale(1);
    }
 }
+
+.item-content canvas {
+   max-width: 100%;
+   height: auto;
+}
