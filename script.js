@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+   const loadingOverlay = document.querySelector('.loading-overlay');
+   const loadingMessage = loadingOverlay.querySelector('.loading-message');
+
    fetch('https://api-love-analysis-7d27d1969775.herokuapp.com/', {
       method: 'GET'
    }).then(response => response.json()).then(data => {
@@ -43,8 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
          document.querySelector('.total .result').textContent = data.average_messages_per_day ? data.average_messages_per_day.total : 0;
          document.querySelector('.otavio .result').textContent = data.average_messages_per_day ? data.average_messages_per_day.otavio : 0;
          document.querySelector('.sophia .result').textContent = data.average_messages_per_day ? data.average_messages_per_day.sophia : 0;
+
+         loadingOverlay.style.display = 'none';
       } else {
-         console.error('Dados inválidos recebidos da API');
+         loadingMessage.innerHTML = '<p>Ocorreu um erro ao carregar os dados da API.</p>';
       }
-   }).catch(e => console.error(e));
+   }).catch(() => {
+      loadingMessage.innerHTML = '<p>Ocorreu um erro na rota da API.</p>';
+   });
 });
