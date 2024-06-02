@@ -185,16 +185,6 @@ header {
    }
 }
 
-footer {
-   background-color: #ff9999;
-   color: #fff;
-   text-align: center;
-   padding: 20px;
-   margin-top: 40px;
-   border-radius: 0 0 10px 10px;
-   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-}
-
 @keyframes heartBeat {
    0% {
       transform: scale(1);
@@ -212,4 +202,18 @@ footer {
 .item-content canvas {
    max-width: 100%;
    height: auto;
+}
+
+footer {
+   background-color: #ff9999;
+   color: #fff;
+   text-align: center;
+   padding: 20px;
+   margin-top: 40px;
+   border-radius: 0 0 10px 10px;
+   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.weekly-hours:last-child {
+   margin-bottom: 0px;
 }
